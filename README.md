@@ -18,11 +18,11 @@ Proyek ini diimplementasikan bukan sebagai skrip migrasi sekali jalan, melainkan
 
 ### Normalisasi Data (UUID & Article ID)
 *Penggunaan skema UUID v7 internal dan string acak 10 karakter untuk referensi publik.*
-![Articles Proof](images/database.png)
+![Articles Proof](visuals/database.png)
 
 ### Polymorhpic Relationship
 *Mapping satu artikel ke berbagai entity (Reporter, Tag) dalam tabel meta.*
-![Polymorphic Proof](images/database1.png)
+![Polymorphic Proof](visuals/database1.png)
 
 ---
 
