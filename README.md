@@ -14,15 +14,15 @@ Proyek ini diimplementasikan bukan sebagai skrip migrasi sekali jalan, melainkan
 
 ### Ingestion Engine (Progress Bar & Logging)
 *Membuktikan penanganan data skala besar dengan feedback visual real-time.*
-![Terminal Demo](visuals/visualdemo.gif)
+![Terminal Demo](visual/visualdemo.gif)
 
 ### Normalisasi Data (UUID & Article ID)
 *Penggunaan skema UUID v7 internal dan string acak 10 karakter untuk referensi publik.*
-![Articles Proof](visuals/database.png)
+![Articles Proof](visual/database.png)
 
 ### Polymorhpic Relationship
 *Mapping satu artikel ke berbagai entity (Reporter, Tag) dalam tabel meta.*
-![Polymorphic Proof](visuals/database1.png)
+![Polymorphic Proof](visual/database1.png)
 
 ---
 
