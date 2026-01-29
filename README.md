@@ -22,7 +22,7 @@ Proyek ini diimplementasikan bukan sebagai skrip migrasi sekali jalan, melainkan
 
 ### Polymorhpic Relationship
 *Mapping satu artikel ke berbagai entity (Reporter, Tag) dalam tabel meta.*
-![Polymorphic Proof](visual/database1visual.png)
+![Polymorphic Proof](visual/databasevisual1.png)
 
 ---
 
