@@ -1,5 +1,5 @@
 # Editorial ETL Engine
-**Technical Assessment - IT Intern Backend Jawa Pos**
+**Technical Assessment - IT Intern Jawapos**
 
 ## Fokus Proyek
 Proyek ini diimplementasikan bukan sebagai skrip migrasi sekali jalan, melainkan sebagai **ELT-style pipeline** yang mengutamakan konsistensi data, repetibilitas, dan kontrol penuh terhadap state database.
@@ -71,5 +71,3 @@ Sistem ini dirancang dengan kesadaran terhadap skalabilitas. Untuk volume data j
 2. **Queueing System:** Memindahkan proses transformasi regex yang berat ke *background worker* menggunakan Laravel Queue (Redis).
 3. **Automated Testing:** Menjadikan unit pemrosesan regex sebagai target utama unit testing untuk menjamin akurasi pembersihan konten pada berbagai variasi HTML.
 ```
-
----
