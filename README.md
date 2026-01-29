@@ -10,6 +10,21 @@ Proyek ini diimplementasikan bukan sebagai skrip migrasi sekali jalan, melainkan
 *   Guaranteed data integrity via Database Transactions and automated normalization logic.
 
 ---
+## Operational Demo 
+
+### Ingestion Engine (Progress Bar & Logging)
+*Membuktikan penanganan data skala besar dengan feedback visual real-time.*
+![Terminal Demo](visuals/visualdemo.gif)
+
+### Normalisasi Data (UUID & Article ID)
+*Penggunaan skema UUID v7 internal dan string acak 10 karakter untuk referensi publik.*
+![Articles Proof](images/database.png)
+
+### Polymorhpic Relationship
+*Mapping satu artikel ke berbagai entity (Reporter, Tag) dalam tabel meta.*
+![Polymorphic Proof](images/database1.png)
+
+---
 
 ## Arsitektur & Logika Teknis
 
@@ -70,4 +85,3 @@ Sistem ini dirancang dengan kesadaran terhadap skalabilitas. Untuk volume data j
 1. **Chunked Transactions:** Memecah transaksi per-baris menjadi per-batch (misal: 500 baris) untuk mengurangi overhead penguncian (lock time) pada database.
 2. **Queueing System:** Memindahkan proses transformasi regex yang berat ke *background worker* menggunakan Laravel Queue (Redis).
 3. **Automated Testing:** Menjadikan unit pemrosesan regex sebagai target utama unit testing untuk menjamin akurasi pembersihan konten pada berbagai variasi HTML.
-```
